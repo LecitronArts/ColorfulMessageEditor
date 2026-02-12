@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "mmeditor"
+version = "${version}"
+displayName = "MiniMessage Editor"
+authors = "Wee-Axe Development"
+description = '''
+mod for weeaxe
+'''
+#logoFile = ""
+
+[[dependencies.mmeditor]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mmeditor]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.10,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mmeditor]]
+modId = "architectury"
+type = "required"
+versionRange = "[18.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "mmeditor.mixins.json"

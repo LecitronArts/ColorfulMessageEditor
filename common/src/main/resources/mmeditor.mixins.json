@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "io.lecitron.mmeditor.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "client.EditBoxAccessor",
+    "client.EditBoxMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "mmeditor",
+  "version": "${version}",
+  "name": "MiniMessage Editor",
+  "description": "mod for weeaxe",
+  "authors": [
+    "Wee-Axe Development"
+  ],
+  "contact": {
+    "homepage": "weeaxe.cn"
+  },
+  "license": "MIT",
+  "icon": "assets/mmeditor/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.lecitron.mmeditor.fabric.MMEditorFabric"
+    ],
+    "client": [
+      "io.lecitron.mmeditor.fabric.client.MMEditorFabricClient"
+    ]
+  },
+  "mixins": [
+    "mmeditor.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.10",
+    "java": ">=21",
+    "architectury": ">=18.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
